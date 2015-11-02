@@ -1,0 +1,9 @@
+<h1>Message from <%= @message.from %></h1>
+
+<h4>sent to <%= @message.to %></h4>
+
+<p>
+  <%= @message.body %>
+</p>
+
+<%= link_to 'back', messages_path %>

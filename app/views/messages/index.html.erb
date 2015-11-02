@@ -1,0 +1,9 @@
+<h1>Messages</h1>
+
+<ul>
+  <% @messages.each do |m| %>
+    <li><%= link_to m.body, message_path(m) %></li>
+  <% end %>
+</ul>
+
+<%= link_to "new", new_message_path, id: "new_message_link", remote: true %>
